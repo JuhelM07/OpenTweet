@@ -11,8 +11,6 @@ struct TimelineView: View {
     
     @StateObject var viewModel: TimelineViewModel
     
-    
-    
     var body: some View {
         NavigationView {
             List {

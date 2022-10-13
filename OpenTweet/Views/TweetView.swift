@@ -16,7 +16,7 @@ struct TweetView: View {
             
             HStack(alignment: .top) {
 
-                AsyncImage(url: URL(string:tweetItem.tweet.avatar ?? "www.google.com")) { avatar in
+                AsyncImage(url: URL(string:tweetItem.tweet.avatar ?? "")) { avatar in
                     if let image = avatar.image {
                         image
                             .resizable()
