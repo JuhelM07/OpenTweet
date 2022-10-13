@@ -42,7 +42,7 @@ struct TweetView: View {
                         
                     Spacer()
                             .frame(height: 4)
-                    HighlightedText(text: tweetItem.tweet.content, highlighted: tweetItem.tweet.author)
+                    Text(.init(tweetItem.tweet.content))
                         .font(.system(size: 15))
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer()
