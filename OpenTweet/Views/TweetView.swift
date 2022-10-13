@@ -26,9 +26,10 @@ struct TweetView: View {
                         Image(systemName: "person.circle.fill")
                             .resizable()
                             .foregroundColor(.gray)
-                            .frame(width: 40, height: 40, alignment: .top)
+                            
                     } else {
                         ProgressView()
+                            .frame(width: 40, height: 40, alignment: .top)
                     }
                 }
                 
