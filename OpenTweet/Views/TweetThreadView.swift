@@ -19,7 +19,6 @@ struct TweetThreadView: View {
             VStack {
                 TweetView(tweetItem: tweetItem)
                     List {
-                        
                         ForEach(viewModel.filteredReplies) { filteredReplies in
                                 TweetView(tweetItem: filteredReplies)
                                     .padding()

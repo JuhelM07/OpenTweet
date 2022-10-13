@@ -8,8 +8,8 @@
 import Foundation
 
 class TimelineViewModel: ObservableObject {
-    @Published var tweetItems: [TweetItem]?
-    @Published var repliesItems: [TweetItem]?
+    @Published var tweetItems = [TweetItem]()
+    @Published var repliesItems = [TweetItem]()
     
     init() {
         let data = JSONLoader.file(withName: "timeline", forClass: TimelineViewModel.self)

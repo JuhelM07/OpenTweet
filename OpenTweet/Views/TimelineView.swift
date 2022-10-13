@@ -14,12 +14,12 @@ struct TimelineView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.tweetItems!) { tweetItem in
+                ForEach(viewModel.tweetItems) { tweetItem in
                     Section {
                         ZStack {
                             TweetView(tweetItem: tweetItem)
                                 .padding()
-                            NavigationLink(destination: TweetThreadView(viewModel: TweetThreadViewModel(id: tweetItem.tweet.id, replies: viewModel.repliesItems!), tweetItem: tweetItem)) {
+                            NavigationLink(destination: TweetThreadView(viewModel: TweetThreadViewModel(id: tweetItem.tweet.id, replies: viewModel.repliesItems), tweetItem: tweetItem)) {
                                 EmptyView()
                                     .listRowBackground(Color.clear)
                             }
