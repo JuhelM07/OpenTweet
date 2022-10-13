@@ -35,8 +35,11 @@ struct TweetView: View {
                 
                 VStack(alignment: .leading) {
                     Text(tweetItem.tweet.author)
-                        .font(.system(size: 17))
                         .bold()
+                        .lineLimit(1)
+                        .font(.system(size: 20))
+                        .minimumScaleFactor(0.01)
+                        
                     Spacer()
                             .frame(height: 4)
                     HighlightedText(text: tweetItem.tweet.content, highlighted: tweetItem.tweet.author)
