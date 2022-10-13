@@ -33,7 +33,8 @@ class TweetThreadViewModelTests: XCTestCase {
 
 
     func test_repliesCount() {
+        XCTAssertFalse(replies.count == 3)
+        XCTAssertTrue(replies.count == 5)
         
-        XCTAssert(replies.count == 3)
     }
 }
