@@ -26,8 +26,6 @@ struct TimelineView: View {
                             .opacity(0)
                         }
                     }
-                    
-                    //.fixedSize(horizontal: true, vertical: false)
                 }
                 
             }
